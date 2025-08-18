@@ -1,0 +1,123 @@
+/* ========== Global Styles ========== */
+:root {
+    --bg-color: #f9fafb;
+    --text-color: #1a1a1a;
+    --heading-color: #6C63FF;
+    --accent-color: #008060;
+    /* darker teal */
+    --card-bg: #ffffff;
+    --code-bg: #1e1e1e;
+    --code-text: #eaeaea;
+    --border-radius: 12px;
+    --shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    --content-width: 800px;
+    /* central column width */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background: var(--bg-color);
+    color: var(--text-color);
+    line-height: 1.6;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    max-width: var(--content-width);
+    width: 100%;
+}
+
+/* ========== Headings ========== */
+h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: var(--heading-color);
+    margin-bottom: 20px;
+}
+
+h3 {
+    margin: 20px 0 10px;
+    color: var(--accent-color);
+}
+
+/* ========== Lists ========== */
+ul {
+    margin: 10px 0px 20px 20px;
+    padding: 0;
+    list-style: none;
+}
+
+ul li {
+    margin: 8px 0;
+    padding: 10px 14px;
+    max-width: 350px;
+    background: var(--card-bg);
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+    transition: transform 0.2s ease, background 0.2s ease;
+}
+
+ul li:hover {
+    transform: translateX(6px);
+    background: #eef3ff;
+}
+
+/* ========== Paragraphs ========== */
+p {
+    margin: 15px 0;
+    font-size: 1rem;
+}
+
+/* ========== Code Styling ========== */
+.code {
+    background: var(--code-bg);
+    color: var(--code-text);
+    padding: 16px;
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+    margin: 20px 0;
+    overflow-x: auto;
+}
+
+.code pre {
+    margin: 0;
+    font-family: "Fira Code", monospace;
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
+/* Inline code */
+code {
+    background: #ececec;
+    padding: 2px 6px;
+    border-radius: 6px;
+    font-family: "Fira Code", monospace;
+    font-size: 0.9rem;
+}
+
+/* ========== Responsive ========== */
+@media (max-width: 600px) {
+    body {
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    .code {
+        font-size: 0.85rem;
+    }
+
+    ul {
+        margin: 10px 0px 20px;
+    }
+}

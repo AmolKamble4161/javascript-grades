@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript Learing 2025</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>JavaScript Learning</h1>
+      <h3>
+        Q] Write a code which can give greads to student according to their
+        scores:
+      </h3>
+      <h3>
+        <ul>
+          <li>90 - 100 : A</li>
+          <li>70 - 89 : B</li>
+          <li>60 - 79 : C</li>
+          <li>50 - 59 : D</li>
+          <li>00 - 49 : F</li>
+        </ul>
+      </h3>
+
+      <h3>Ans :</h3>
+      <p>
+        The following code works step by step: first, it gets input from the
+        user and stores that value in the <code>marks</code> variable. Then it
+        checks the first condition to validate the input:
+        <code>marks &gt; 100</code> OR <code>marks &lt; 0</code>. If either is
+        true, it logs the message “please enter valid input!” to the console.
+      </p>
+
+      <p>
+        If the value is between 0 and 100 (inclusive), it proceeds to the next
+        conditions, which check the grades:
+      </p>
+
+      <ul>
+        <li>
+          <code>marks &gt;= 90 &amp;&amp; marks &lt;= 100</code> → Grade A
+        </li>
+        <li><code>marks &gt;= 70 &amp;&amp; marks &lt;= 89</code> → Grade B</li>
+        <li><code>marks &gt;= 60 &amp;&amp; marks &lt;= 69</code> → Grade C</li>
+        <li><code>marks &gt;= 50 &amp;&amp; marks &lt;= 59</code> → Grade D</li>
+        <li><code>marks &gt;= 0 &amp;&amp; marks &lt;= 49</code> → Grade F</li>
+      </ul>
+
+      <p>
+        This way, the program ensures that only valid input is accepted and then
+        determines the correct grade based on the marks.
+      </p>
+
+      <div class="code">
+        <pre>
+let marks = prompt('Enter Marks!');
+
+if(marks > 100 || marks < 0){
+    console.log('please enter valid input!');
+}else if(marks >= 90 && marks <=100){
+    console.log('A');
+}else if(marks >= 70 && marks <= 89){
+    console.log('B');
+}else if(marks >= 60 && marks <= 69){
+    console.log('C');
+}else if(marks >= 50 && marks <= 59){
+    console.log('D');
+}else if(marks >= 0 && marks <= 49){
+    console.log('F');
+}
+</pre
+        >
+      </div>
+
+      <script src="script.js"></script>
+    </div>
+  </body>
+</html>
