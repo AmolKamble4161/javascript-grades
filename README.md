@@ -2,7 +2,7 @@ JavaScript Grades
 
 A simple JavaScript project that calculates student grades based on marks entered by the user.
 🚀 Demo
-👉 Live Project
+👉 [Live Project](https://amolkamble4161.github.io/javascript-grades/)
 📖 Features
 Enter marks (0–100) through a prompt.
 Get grade output in the browser console.
